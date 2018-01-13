@@ -26,6 +26,7 @@ app.use((req, res, next) => {
 
 // Maintenance
 app.use((req, res, next) => {
+  next();
   res.render("maintenance.hbs", {
     pageTitle: "Maintenance"
   });
